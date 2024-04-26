@@ -105,8 +105,8 @@ const Data: React.FC = () => {
                   display: "flex",
                   flexFlow: "column",
                   borderRadius: "10px",
-                  backgroundColor: "transparent",
-                  backgroundOpacity: "90%",
+                  backgroundColor: "#05082B",
+                  backgroundOpacity: "75%",
                   border: "1px #FFFFFF0D solid",
                   padding: "15px",
                   color: "#fff",
@@ -125,7 +125,11 @@ const Data: React.FC = () => {
                 </Typography>
                 <Divider color="#C6C6C6" />
                 <Stack
-                  sx={{ flexBasis: "50%", justifyContent: "space-between" }}
+                  sx={{
+                    flexBasis: "50%",
+                    justifyContent: "space-between",
+                    paddingTop: "20px",
+                  }}
                 >
                   <Typography>Status: {capsule.status}</Typography>
                   <Typography>Type: {capsule.type}</Typography>

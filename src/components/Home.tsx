@@ -21,7 +21,7 @@ function Home() {
         backgroundImage: "url('/background.jpg')",
         backgroundSize: "cover",
 
-        height: { xs: "500px", md: "700px" },
+        height: { xs: "500px", md: "600px" },
       }}
     >
       <AppBar
@@ -68,7 +68,7 @@ function Home() {
               <MenuIcon />
             </IconButton>
             <Drawer
-              anchor="left"
+              anchor="right"
               open={isDrawerOpen}
               onClose={() => setIsDrawerOpen(false)}
             >
@@ -78,11 +78,11 @@ function Home() {
                 textAlign="center"
                 role="presentation"
                 sx={{
-                  backgroundColor: "#05082B",
+                  backgroundColor: "#000",
                   color: "#fff",
-                  fontSize: "24px",
-                  marginRight: "2rem",
-                  marginTop: "1rem",
+                  fontSize: "26px",
+                  marginRight: "0",
+                  marginTop: "0",
                   display: "flex",
                   flexDirection: "column",
                   height: "100vh",
@@ -183,12 +183,8 @@ function Home() {
 
       <Stack
         spacing={2}
-        mt={5}
+        my={10}
         sx={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
