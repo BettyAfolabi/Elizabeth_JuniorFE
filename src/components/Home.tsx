@@ -24,6 +24,7 @@ function Home() {
         height: { xs: "500px", md: "600px" },
       }}
     >
+      {/* Begining of NavBar */}
       <AppBar
         position="static"
         sx={{
@@ -53,6 +54,8 @@ function Home() {
           >
             CapsFo
           </Typography>
+
+          {/* Start of Mobile Nav */}
           <Stack
             sx={{
               display: { xs: "block", md: "none" },
@@ -130,6 +133,9 @@ function Home() {
               </Box>
             </Drawer>
           </Stack>
+          {/* End of Mobile Nav */}
+
+          {/* Start of desktop Nav */}
           <Stack
             sx={{
               display: { xs: "none", md: "flex" },
@@ -180,6 +186,7 @@ function Home() {
           </Stack>
         </Toolbar>
       </AppBar>
+      {/* End of Desktop Nav */}
 
       <Stack
         spacing={2}
