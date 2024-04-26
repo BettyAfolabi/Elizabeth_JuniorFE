@@ -30,6 +30,7 @@ function Footer() {
           display: "flex",
           flexDirection: "row",
           paddingX: "2rem",
+          id: "contact",
           paddingY: "3.5rem",
           "@media (max-width: 768px)": {
             flexDirection: "column-reverse",

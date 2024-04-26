@@ -30,7 +30,13 @@ function About() {
           paddingX: "2rem",
         }}
       >
-        <Stack sx={{ width: "520px", marginRight: "1rem", marginTop: "1rem" }}>
+        <Stack
+          sx={{
+            width: { xs: "400px", md: "520px" },
+            marginRight: "1rem",
+            marginTop: "1rem",
+          }}
+        >
           <Typography
             sx={{
               lineHeight: "40px",

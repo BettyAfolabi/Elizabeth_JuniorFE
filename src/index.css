@@ -30,3 +30,10 @@ body {
     flex: 0 0 auto;
     justify-content: flex-start;
 }
+
+.pg-button {
+    background-color: #070736;
+    color: #fff;
+    width: 40px;
+    height: 30px;
+}

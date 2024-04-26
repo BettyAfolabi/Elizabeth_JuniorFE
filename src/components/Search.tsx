@@ -55,7 +55,14 @@ const Search: React.FC<Props> = ({ onSearch }) => {
       >
         Search Through
       </Typography>
-      <Stack sx={{ display: "flex", flexFlow: "row", gap: "40px" }}>
+      <Stack
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "40px",
+          alignItems: "center",
+        }}
+      >
         <input
           type="text"
           name="type"
@@ -63,21 +70,22 @@ const Search: React.FC<Props> = ({ onSearch }) => {
           value={filters.type}
           onChange={handleChange}
           style={{
-            margin: "8px",
             width: "300px",
-            borderColor: "white",
             padding: "8px",
             backgroundColor: "black",
             color: "white",
+            border: "1px solid #fff",
+            borderRadius: "4px",
+            outline: "none",
           }}
         />
 
         <Stack
-          style={{
-            margin: "8px",
+          sx={{
             width: "300px",
-            borderColor: "#ced4da",
             padding: "8px",
+            border: "1px solid #ced4da",
+            borderRadius: "4px",
           }}
         >
           <label htmlFor="capsule-status" style={{ color: "#fff" }}>
@@ -86,26 +94,30 @@ const Search: React.FC<Props> = ({ onSearch }) => {
           <select
             id="capsule-status"
             value={filters.status}
+            // onChange={handleChange}
             style={{
               width: "100%",
               padding: "8px",
               backgroundColor: "black",
               color: "white",
-              borderColor: "white",
+              border: "none",
+              borderRadius: "4px",
+              outline: "none",
             }}
           >
             <option value="">None</option>
-            <option value={filters.status}>Active</option>
-            <option value={filters.status}>Retired</option>
-            <option value={filters.status}>Destroyed</option>
-            <option value={filters.status}>Unknown</option>
+            <option value="Active">Active</option>
+            <option value="Retired">Retired</option>
+            <option value="Destroyed">Destroyed</option>
+            <option value="Unknown">Unknown</option>
           </select>
         </Stack>
       </Stack>
+
       <Stack
         sx={{
           display: "flex",
-          flexFlow: "row",
+          flexDirection: "row",
           gap: "40px",
           marginTop: "1.5rem",
         }}
@@ -117,12 +129,13 @@ const Search: React.FC<Props> = ({ onSearch }) => {
           value={filters.reuse_count}
           onChange={handleChange}
           style={{
-            margin: "8px",
             width: "300px",
-            borderColor: "white",
             padding: "8px",
             backgroundColor: "black",
             color: "white",
+            border: "1px solid #fff",
+            borderRadius: "4px",
+            outline: "none",
           }}
         />
         <Button
