@@ -5,7 +5,7 @@
 ### Links
 
 - Solution URL: [solution URL](https://github.com/BettyAfolabi/Elizabeth_JuniorFE)
-- Live Site URL: [interactive-card-details](https://capsfo.netlify.app)
+- Live Site URL: [CapsFo](https://capsfo.netlify.app)
 
 [mySolution-video](https://drive.google.com/file/d/1Ia1cQ2bHOQ32CNOa257Ib98RZhD1jKth/view?usp=sharing)
 
@@ -25,7 +25,7 @@
 
 ### Improvement
 
-    -There's room for improvement on this App, proper pagination can be achievable
+    - Search Filters can be improved on.
 
 ### Getting Started
 
