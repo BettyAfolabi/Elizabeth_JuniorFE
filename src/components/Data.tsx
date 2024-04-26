@@ -105,7 +105,7 @@ const Data: React.FC = () => {
                   display: "flex",
                   flexFlow: "column",
                   borderRadius: "10px",
-                  backgroundColor: "#05082B",
+                  backgroundColor: "#030342b3",
                   backgroundOpacity: "75%",
                   border: "1px #FFFFFF0D solid",
                   padding: "15px",
